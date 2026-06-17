@@ -8,6 +8,7 @@
 
 void foreach(const std:: vector<int>& values, const std::function<void(int)>& func)
 {
+    // ReSharper disable once CppLocalVariableMayBeConst
     for (int value : values)
         func(value);
 }
@@ -24,7 +25,7 @@ namespace orange {
 
     void print(const char* text) {
         std::string temp = text;
-        std::reverse(temp.begin(), temp.end());
+        std::ranges::reverse(temp);
         std::cout << temp << std::endl;
     }
 }
