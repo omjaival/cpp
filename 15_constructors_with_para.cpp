@@ -5,9 +5,7 @@ class Entity
 public:
     float X, Y;
 
-    Entity()
-    {
-
+    Entity() : X(0), Y(0) {
     }
 
     Entity(float x, float y)
@@ -16,8 +14,7 @@ public:
         Y = y;
     }
 
-    void print()
-    {
+    void print() const {
         std::cout << X << "," << Y<< std::endl;
     }
 };

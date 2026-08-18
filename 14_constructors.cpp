@@ -11,8 +11,7 @@ class Entity
             Y = 0.0f;
         }
 
-    void print()
-    {
+    void print() const {
         std::cout << X << "," << Y<< std::endl;
     }
 };
