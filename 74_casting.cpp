@@ -26,7 +26,7 @@ public:
     ~AnotherClass() {
     }
 };
-
+ 
 int main() {
     Derived *derived = new Derived();
 
