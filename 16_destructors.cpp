@@ -16,8 +16,7 @@ public:
     {
         std::cout<<"Destroyed Entity"<<std::endl;
     }
-    void print()
-    {
+    void print() const {
         std::cout << X << "," << Y<< std::endl;
     }
 };
