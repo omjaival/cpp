@@ -13,19 +13,16 @@ public:
     {
         m_LogLevel = level;
     }
-    void Error(const char* message)
-    {
+    void Error(const char* message) const {
         if (m_LogLevel >= LevelError)
             std::cout << "[ERROR]:"<<message << std::endl;
     }
 
-    void Warn(const char* message)
-    {
+    void Warn(const char* message) const {
         if (m_LogLevel >= LevelWarning)
             std::cout << "[WARNING]:"<<message << std::endl;
     }
-    void Info(const char* message)
-    {
+    void Info(const char* message) const {
         if (m_LogLevel >= LevelInfo)
             std::cout << "[INFO]:"<<message << std::endl;
     }

@@ -2,7 +2,7 @@
 
 enum Example
 {
-    A,B,C
+    A [[maybe_unused]],B,C [[maybe_unused]]
 };
 int main()
 {
