@@ -6,7 +6,7 @@
      {
          if(i>2)
          break;
-         std::cout<< "Salaar Devaratha Saisar "<< std::endl;
+         std::cout<< "Salaar Devaratha Saisar "<< std::endl; // NOLINT(*-misleading-indentation)
          std::cout<< i << std::endl;
      }
      std::cin.get();

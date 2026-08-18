@@ -2,12 +2,9 @@
  
  int main()
  {
-     int x = 17;
-     bool comparison = x==17;
-     
-     if(comparison)
+     if constexpr (constexpr int x = 17; x==17)
      {
-        std::cout << "Your number is also the same"<<std::endl;
+        std::cout << R"(Your number is also the same)"<< std::endl;
      }
      std::cin.get();
     
