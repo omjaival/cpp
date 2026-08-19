@@ -4,6 +4,8 @@
 class Printable
 {
 public:
+    virtual ~Printable() = default;
+
     virtual std::string GetClassName() = 0;
 };
 
@@ -16,7 +18,6 @@ public:
 
 class Player: public Entity
 {
-private:
     std::string m_Name ;
 public:
     Player(const std::string& name)
