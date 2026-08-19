@@ -4,13 +4,13 @@ int divide (int a,int b)
     return a/b;
 }
 
-void dividefunction(int a, int b)
+void divide_function(int a, int b)
 {
     int result = divide(a,b);
     std::cout<< result << std::endl;
 }
 int main()
 {
-    dividefunction(50,20);
+    divide_function(50,20);
     std::cin.get();
 }
