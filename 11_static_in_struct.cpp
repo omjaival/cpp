@@ -1,7 +1,6 @@
 #include<iostream>
 
-struct Entity
-{
+struct Entity {
     static int x,y;
 
    static  void print()
@@ -13,8 +12,7 @@ struct Entity
 int Entity ::x;
 int Entity ::y;
 
-int main()
-{
+int main() {
     Entity::x=2;
     Entity::y=3;
 
