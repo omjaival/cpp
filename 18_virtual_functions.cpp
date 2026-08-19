@@ -1,9 +1,12 @@
 #include <iostream>
 #include <string>
+#include <utility>
 
 class Entity
 {
 public:
+    virtual ~Entity() = default;
+
     virtual std::string GetName(){return "Entity";}
 };
 
@@ -12,8 +15,8 @@ class Player: public Entity
 private:
     std::string m_Name ;
 public:
-    Player(const std::string& name)
-        :m_Name(name){}
+    Player(std::string  name)
+        :m_Name(std::move(name)){}
 
     std::string GetName() override {return m_Name;}
 
@@ -26,11 +29,13 @@ void PrintName (Entity* entity)
 
 int main()
 {
-    Entity* e=new Entity();
+    auto *e = new Entity();
     PrintName(e);
+    delete e;
 
-    Player* p=new Player("omi");
+    auto* p = new Player("omi");
     PrintName(p);
+    delete p;
 
     std ::cin.get();
 }
