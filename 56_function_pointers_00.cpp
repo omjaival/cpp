@@ -9,7 +9,7 @@ int main()
 {
     typedef void(*HelloWorldFunction)(int) ;
 
-    HelloWorldFunction function = HelloWorld;
+    const HelloWorldFunction function = HelloWorld;
 
     function(17);
     function(18);
