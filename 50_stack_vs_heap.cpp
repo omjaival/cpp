@@ -22,19 +22,20 @@ int main()
     Vector3 vector;
 
     // heap allocation
-    int* hvalue = new int;
-    *hvalue = 5;
-    int* harray = new int[5];
-    harray[0] = 1;
-    harray[1] = 2;
-    harray[2] = 3;
-    harray[3] = 4;
-    harray[4] = 5;
-    Vector3* hvector = new Vector3();
+    const auto hValue = new int;
+    *hValue = 5;
 
-    delete hvalue;
-    delete[] harray;
-    delete hvector;
+    const auto hArray = new int[5];
+    hArray[0] = 1;
+    hArray[1] = 2;
+    hArray[2] = 3;
+    hArray[3] = 4;
+    hArray[4] = 5;
+    const Vector3* hVector = new Vector3();
+
+    delete hValue;
+    delete[] hArray;
+    delete hVector;
 
 
     std::cin.get();
