@@ -7,8 +7,15 @@
 #define LOG(x)
 #endif
 
+void LOG(const char * str);
+
 int main()
 {
     LOG("Hello");
     std::cin.get();
+}
+
+
+int main() {
+
 }
