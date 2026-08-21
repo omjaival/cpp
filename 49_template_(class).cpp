@@ -1,19 +1,18 @@
 #include<iostream>
 #include<string>
 
-template<typename T ,int N>
-class Array
-{
+template<typename T, int N>
+class Array {
 private:
     T m_Array[N];
+
 public:
-    int GetSize() const {return N;}
+    int GetSize() const { return N; }
 };
 
-int main()
-{
-    Array<std::string , 50> array;
-    std::cout<<array.GetSize()<<std::endl;
+int main() {
+    Array<std::string, 50> array;
+    std::cout << array.GetSize() << std::endl;
 
     std::cin.get();
 }
