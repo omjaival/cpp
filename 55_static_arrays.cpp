@@ -1,14 +1,14 @@
 #include <iostream>
 #include<array>
 
-void PrintArray(const std::array<int, 5>& data)
-{
-    for (int i = 0; i < data.size(); )
+void PrintArray(const std::array<int, 5>& data) {
+    for (int i = 0; i < data.size();)
+
 }
 
 int main()
 {
-    std::array<int, 5> data;
+    std::array<int, 5> data; // NOLINT(*-pro-type-member-init)
     data[0] = 2;
     data[4] = 1;
 
