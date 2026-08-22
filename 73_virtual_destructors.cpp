@@ -23,14 +23,5 @@ private:
 };
 
 int main() {
-    Base *base = new Base();
-    delete base;
-    std::cout << "---------------------\n";
-    Derived *derived = new Derived();
-    delete derived;
-    std::cout << "---------------------\n";
-    Base *poly = new Derived();
-    delete poly;
-
     std::cin.get();
 }
